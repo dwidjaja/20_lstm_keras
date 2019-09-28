@@ -23,7 +23,7 @@ class Data:
         #set timestamp as index
         df.set_index('timestamp', inplace = True)
         
-        #mark stabil as 1
+        #mark stable as 1
         df['stable'] = df['stable'].fillna(1)
 
         #set input and output
