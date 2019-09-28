@@ -30,12 +30,12 @@ class Data:
         X_stabil = df['count']
         y_stabil = df['stable']
 
-        self.X_stabil = X_stabil
-        self.y_stabil = y_stabil
+        self.X_stable = X_stable
+        self.y_stable = y_stable
         
     def splitTrainTest(self, input_test_size):
         #split data to train and test
-        X_train, X_test, y_train, y_test = train_test_split(self.X_stabil, self.y_stabil, test_size = float(input_test_size), random_state = 42, shuffle = False)
+        X_train, X_test, y_train, y_test = train_test_split(self.X_stable, self.y_stable, test_size = float(input_test_size), random_state = 42, shuffle = False)
         X_train = X_train.to_numpy()
         X_test = X_test.to_numpy()
         y_train = y_train.to_numpy()
